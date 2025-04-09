@@ -30,4 +30,6 @@ def create_app():
     #Add the routes to the app
     app.register_blueprint(product_routes.blueprint)
 
+    from app.models.product import Product
+
     return app
